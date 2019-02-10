@@ -64,6 +64,9 @@
     <!-- Contenido-->
     {% block content %}
     {% endblock %}
+    {% if not request.get_full_path == '/' %}
+        <hr>
+    {% endif %}
 
     <!-- Pié de página -->
     <footer>
