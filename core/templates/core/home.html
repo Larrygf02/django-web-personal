@@ -1,6 +1,13 @@
 {% extends 'core/base.html' %}
 {% block title %}Portada {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block header_content %}
+<h1>Raul Larriega</h1>
+<span class="subheading">Ingenieria de Sistemas</span>
+{% endblock %}
+
 {% block content %}
-<h2>Portada</h2>
-<p>Esto es la portada</p>
+
 {% endblock %}
